@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+     background: linear-gradient(90deg,#e52e71,#ff8a00);
+  }
+
+  main{
+    background: #17141d;
+    color: aliceblue;
+    padding-top: 15px;
+  }
+
+  h1{
+    text-align: center;
+    border-radius: 25px;
+    color: #17141d;
+  }
+
+ .logo{
+    background: #17141d;
+    min-height: 60px ;
+    color: aliceblue;
+    grid-column: 1/2;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-items{
+    background: #17141d;
+    min-height: 60px ;
+    color: aliceblue;
+    grid-column: 2/3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr;
+    grid-gap: 0px;
+  }
+
+  .nav-line{
+    margin: 4px;
+    width: 30px;
+    padding-top: 3px;
+  }
+
+  #john-logo{
+    width: 150px;
+    height: 80%;
+    padding-top: 13px;
+    padding-left: 12px;
+
+  }
+
+  #main-head{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    text-align: center;
+  }
+
+  #main-head-desktop{
+    display: none;
+  }
+
+  .work-photos{
+    width: 280px;
+      height: 280px;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+  }
+
+  .header-box{
+    padding-bottom: 15px;
+  }
+
+  footer{
+    padding-top: 15px;
+    min-height: 75px;
+    background-color: #0c0a0f;
+    color: aliceblue;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .photo-style{
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  #exp{
+    background-image: linear-gradient(90deg,#e52e71,#ff8a00);
+  }
+
+  @media only screen and (min-width: 768px){
+
+    .logo{
+      min-height: 100px;
+      padding-bottom: 0px;
+    }
+
+    #john-logo{
+      height: 90%;
+      width: 270px;
+    }
+
+    .dropdown{
+      display: none;
+    }
+
+    .nav-items{
+      padding-top: 10px;
+      justify-content:space-evenly;
+      flex-direction: column;
+    }
+
+    .nav-list{
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: space-around;
+
+    }
+
+    .item{
+      padding: 1rem;
+    }
+
+    .item:hover{
+      background-color: #0c0a0f;
+      border-radius: 25px;
+    }
+
+    .link{
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    .link:hover{
+      color: aliceblue;
+      background-color: #0c0a0f;
+      border-radius: 25px;
+    }
+
+    .page-list{
+      font-size: 1.3rem;
+    }
+
+    .padded-content{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .current-page{
+      color: rgb(150, 165, 178);
+    }
+
+
+  }
+
+  @media only screen and (min-width: 992px){
+
+    #main-head{
+      display:none;
+    }
+
+    #main-head-desktop{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .work-photos{
+      width: 230px;
+      height: 230px;
+    }
+
+    .vert-center{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .padded-content{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .page-list{
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media only screen and (min-width: 1200px){
+    .work-photos{
+      width: 280px;
+      height: 280px;
+    }
+  }
